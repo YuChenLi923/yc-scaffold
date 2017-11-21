@@ -3,7 +3,6 @@ const webpack = require('webpack'),
       opn = require('opn'),
       config = require('./webpack.dev.config'),
       app = express();
-console.log(config);
 const compiler = webpack(config),
       url = 'http://localhost:8080',
       devMiddleware = require('webpack-dev-middleware')(compiler, {

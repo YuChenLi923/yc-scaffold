@@ -3,9 +3,8 @@ const baseWebpackConfig = require('./webpack.base.config'),
       path = require('path');
 delete baseWebpackConfig.plugins;
 module.exports = merge(baseWebpackConfig, {
-    resolve: {
-        // alias: {
-        //     'async-task-manager' : path.resolve(__dirname, '../src/dist')
-        // }
-    }
+  resolve: {
+    // alias: {
+    // }
+  }
 });
